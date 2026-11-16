@@ -1,4 +1,4 @@
-"""Automated API tests (run: python3 -m unittest discover tests). Uses a temporary database."""
+"""Automated API tests (run: python3 -m unittest discover tests)."""
 import json, os, sys, tempfile, threading, time, unittest, urllib.request, urllib.error
 os.environ["IZIKO_DB"] = os.path.join(tempfile.mkdtemp(), "test.db")
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "server"))
