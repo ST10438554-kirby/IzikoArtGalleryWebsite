@@ -1,10 +1,4 @@
 /* SA National Gallery (Iziko): hash-routed single page site. Data comes from the REST API, falling back to museum_seed.json.
- * References (Harvard style):
- *  Firebase (2026) Authenticate using Google with JavaScript. Available at: https://firebase.google.com/docs/auth/web/google-signin (Accessed: 15 November 2026).
- *  MDN Web Docs (2026) Window: localStorage property. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage (Accessed: 15 November 2026).
- *  MDN Web Docs (2026) Fetch API. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API (Accessed: 15 November 2026).
- *  MDN Web Docs (2026) Window: hashchange event. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Window/hashchange_event (Accessed: 15 November 2026).
- *  W3C (2026) ARIA Authoring Practices Guide. Available at: https://www.w3.org/WAI/ARIA/apg/ (Accessed: 15 November 2026).
  */
 (() => {
 "use strict";
