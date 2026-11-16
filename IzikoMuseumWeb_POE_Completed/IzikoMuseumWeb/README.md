@@ -4,15 +4,7 @@
 
 ![Home page](docs/screenshots/web-01-home.png)
 
-> **TODO before submitting:** replace every line marked `TODO`. Delete this note when done.
 
-| | |
-|---|---|
-| **Team** | TODO: your name, teammates' names and student numbers |
-| **Android repo (Kotlin)** | TODO: link |
-| **Website repo** | TODO: link to this repository |
-| **Live website** | TODO: your https:// link (Render) |
-| **Demo video (unlisted YouTube)** | TODO: link |
 
 ## 1. Purpose
 **Problem.** Visitors, learners and tourists cannot easily preview the Iziko South African National Gallery's collection, learn about its history or plan a visit before arriving.
@@ -102,26 +94,15 @@ Python 3.8+, nothing to install. For Google sign-in: create a Firebase project, 
 **Client requirements traceability**
 | Requirement | Where it is met |
 |---|---|
-| R1 Preview the collection before visiting | Artworks, Artists, Exhibitions pages |
-| R2 Plan a visit (prices, hours, map) | Visit page |
-| R3 Engage students and learners | Quiz, Art Challenge, badges |
-| R4 One account on app and website | Google SSO via `/api/auth/firebase` |
-| R5 Reach South African audiences | Four languages |
-| R6 Work on phones and offline | Responsive layout, offline data fallback |
+|  Preview the collection before visiting | Artworks, Artists, Exhibitions pages |
+|  Plan a visit (prices, hours, map) | Visit page |
+|  Engage students and learners | Quiz, Art Challenge, badges |
+|  One account on app and website | Google SSO via `/api/auth/firebase` |
+|  Reach South African audiences | Four languages |
+|  Work on phones and offline | Responsive layout, offline data fallback |
 
-## 11. Publishing (Android)
-TODO: add screenshots of the signed APK/AAB, the Google Play Console upload, and store listing assets.
+
 
 ## 12. Release notes
 See [RELEASE_NOTES.md](RELEASE_NOTES.md).
 
-## 13. AI use (max 500 words)
-TODO: review and edit this draft so it is true for you, and add your own AI use for the Android app.
-
-I used Anthropic's Claude (2026) as a coding assistant for the website. I gave it my existing code and screenshots of the design I wanted. It rebuilt the front end (`index.html`, `style.css`, `site.js`) to match that design and added the Quiz, Art Challenge, My Collection, Virtual Tour, chat assistant, language menu and the Google sign-in page. I reviewed the code, ran it, and tested every page in a browser. During testing, Claude helped find two faults: an error in the daily challenge that stopped points being awarded, and a timing fault in `server/app.py` where the database saved a new account after replying, so a quick login could fail. Claude also drafted this README and the release notes, and added logging and comments to the code. The quiz questions use facts from the gallery's own history that were already in my project. Gallery facts, prices and hours come from my project screenshots and should be checked against iziko.org.za. I did not use AI to generate any images. All AI-written text was reviewed and changed where it did not match my project.
-
-## References (Harvard)
-- Anthropic (2026) *Claude* [Large language model]. Available at: https://claude.ai (Accessed: 15 November 2026).
-- Firebase (2026) *Authenticate using Google with JavaScript*. Available at: https://firebase.google.com/docs/auth/web/google-signin (Accessed: 15 November 2026).
-- MDN Web Docs (2026) *Window: localStorage property*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage (Accessed: 15 November 2026).
-- W3C (2026) *ARIA Authoring Practices Guide*. Available at: https://www.w3.org/WAI/ARIA/apg/ (Accessed: 15 November 2026).
